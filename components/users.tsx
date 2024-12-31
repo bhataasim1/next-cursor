@@ -39,7 +39,7 @@ export default function Users() {
   }, [hasNextPage, inView, fetchNextPage]);
 
   if (isLoading) {
-    return <Loader />
+    return <Loader length={10} />
   }
 
   if (error) {
